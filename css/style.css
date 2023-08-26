@@ -422,22 +422,39 @@ header .container  .right a i:hover {
 .getlook .title {
     margin: 20px auto;
     text-align: center;
-    background-color: white;
+    background-color: aliceblue;
 }
 .getlook .main-boxes {
-    width: 90%;
+    width: 80%;
     display: flex;
  justify-content: flex-start;
- margin: auto;
+    margin: auto;
  overflow-x: scroll;
 
  
+}
+@media (max-width:430px) {
+    
+    .getlook .main-boxes {
+            margin: 0 ;
+            margin-left: 10px;
+            width: 100%;
+    }
+}
+@media (max-width:342px) {
+    .getlook .main-boxes {
+            margin-left: 10px;
+    }
+    .getlook .box {
+         width: 280px !important;
+    }
+
 }
 .main-boxes::-webkit-scrollbar {
     display: none;
 } 
 .getlook .box {
-   width: 320px;
+   width: 300px;
     margin: 0 5px;
     overflow: hidden;
     position: relative;
@@ -448,8 +465,6 @@ header .container  .right a i:hover {
    }
 .getlook .box .img{
     width: 100%;
-
-    
 }
 .getlook .box img{
     max-width: 100%;
